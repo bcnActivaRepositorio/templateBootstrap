@@ -179,3 +179,14 @@ $(document).ready(function() {
   }
 
   const clearMe = () => allOfYou.forEach((e) => e.value = "");
+
+  // ========================================================================= //
+  //  Time
+  // ========================================================================= //
+  function myYear(){
+    let today = document.getElementById('thisYear');
+    let showYear = new Date().getFullYear();
+    // print me
+    today.innerHTML = showYear;
+  }
+  myYear();
