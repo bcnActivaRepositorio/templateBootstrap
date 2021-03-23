@@ -624,7 +624,9 @@ Use of ::before so the grayscale doesn't affect the span as it gets on top of it
   font-weight: 400;
   font-size: 13px;
 }
-
+#myPhone {
+  color: #898989;
+}
 /*-----------------------------------------------------------------------------------*/
 /*  Footer
 /*-----------------------------------------------------------------------------------*/

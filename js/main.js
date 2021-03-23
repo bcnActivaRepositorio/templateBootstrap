@@ -190,3 +190,20 @@ $(document).ready(function() {
     today.innerHTML = showYear;
   }
   myYear();
+
+  // ========================================================================= //
+  //  Phone
+  // ========================================================================= //
+
+  // get the span
+  let phone = document.getElementById('myPhone');
+  phone.addEventListener('click', phoneMe);
+// whatsapp message
+function phoneMe(){
+  // send me the message
+  phone.href = "https://api.whatsapp.com/send?phone=+34622064538";
+  // erase my phone number from html
+  setTimeout(()=>{
+    phone.href = "";
+  }, 500);
+}
