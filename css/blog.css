@@ -15,9 +15,11 @@
 /*-----------------------------------------------------------------------------------*/
 
 /* main content */
-
+*, ::after, ::before {
+  box-sizing: border-box;
+}
 .main-content {
-  background: #f7f7f7;
+  background: transparent;
 }
 
 .main-content .container-main {
@@ -31,7 +33,7 @@
 }
 
 .container-main .block-main .content-main {
-  background: #fff none repeat scroll 0 0;
+  background: transparent none repeat scroll 0 0;
   display: inline-block;
   width: 100%;
 }
@@ -77,7 +79,7 @@
 /* Commonts */
 
 .comments {
-  background: #fff;
+  background: transparent;
 }
 
 .entry-comments h6 {
@@ -133,7 +135,7 @@
 /* Commonts form */
 
 .cmt {
-  background: #fff;
+  background: transparent;
 }
 
 blockquote {
@@ -142,4 +144,37 @@ blockquote {
   margin: 30px 0;
   border: none;
   border-left: 4px solid #b8a07e;
+}
+.colors {
+  border-radius: 4px;
+border: 1px solid #212121;
+overflow-y: hidden;
+overflow-x: auto;
+white-space: nowrap;
+position: relative;
+color: #ccc;
+display: block;
+
+}
+.color-block {
+    display: inline-block;
+    width: 20%;
+    height: 190px;
+    margin: 0;
+    position: relative;
+    padding: 0;
+    vertical-align: top;
+    background-color: transparent;
+}
+.single-palette .color {
+  height: 190px;
+}
+.color-info-additional {
+  position: absolute;
+bottom: 0;
+width: 100%;
+background-color: rgba(0,0,0,.7);
+z-index: 1;
+padding: 4px 8px;
+
 }
